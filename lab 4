@@ -1,0 +1,72 @@
+def recur_factorial(n):
+    if n == 1: 
+        return n
+    else:
+        return n*recur_factorial(a-1)
+num = 7
+if num < 60:
+   print("class failed")
+elif num >= 70:
+   print("The factorial of 0 is 1")
+def grade(x):
+    if x >= 90:                     return "A"
+    elif x >= 80:                   return "B"
+    elif x >= 70:                   return "C"
+    elif x >= 60:                   return "D"
+    else:
+        return "F"
+print(grade(97))
+def odd(x):
+    if x%2 == 1:
+        print(x, "is an odd number.")
+    else:
+        print(x, "is an even number.")
+odd(7)
+print("' * 5 =") 
+print("* *")
+print("* * * *") 
+print("* * * * *") 
+print("* * * * * *") 
+print("* * * * * * *")
+def percent(a,b):
+    print((b-a)/a * 100, "% increase.")
+percent(100,150)
+def prime(n):
+    if n <= 1: 
+        print("False")
+    elif n <= 3: 
+        print("True")
+    elif n%2 == 0 or n%3 == 0: 
+        print("False")
+    i=5
+    while i*i <= n:
+        if n%i == 0 or n%(i+2) == 0: 
+            print("False")
+        i=i+6 
+    print("True")
+
+prime
+def triangle(a,b,c):
+    if a == b == c: 
+        print("Equilateral")
+    elif a == b or b == c or a == c: print("Isosceles")
+    else: 
+        print("Scalene")
+triangle(3,3,3)
+def cube(x,y,z):
+    if x <= y and x <= z: 
+        if x**3 <= y*z:
+            print("True") 
+        else:
+            print("False") 
+    elif y <= x and y <= z:
+        if y**3 <= x*z: 
+            print("True")
+        else: 
+            print("False")
+    else:
+        if z**3 <= x*y:
+            print("True") 
+        else:
+            print("False") 
+cube(2,2,2)
